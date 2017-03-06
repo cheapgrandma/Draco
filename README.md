@@ -6,7 +6,7 @@ You have already run out of stock ? You do not want this to happen to you anymor
 
 ## Team members
 
-<a href="https://github.com/cheapgrandma">Cheap GrandMa</a>
+<a href="https://github.com/cheapgrandma" target="_blank">Cheap GrandMa</a>
 
 ## Release History
 
