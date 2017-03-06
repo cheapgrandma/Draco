@@ -13,7 +13,7 @@ You have already run out of stock ? You do not want this to happen to you anymor
 * 0.0.1
     * Installation in progress
 
-## Meta
+## License
 
 CheapGrandma – cheap.grandma.web@gmail.com
 
