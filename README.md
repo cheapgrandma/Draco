@@ -12,8 +12,12 @@ You have already run out of stock ? You do not want this to happen to you anymor
 
 ## Release History
 
+* 0.1.1
+   * JS, CSS and Plugins files (In Progress)
+* 0.1.0
+   * Laravel installation
 * 0.0.1
-    * Installation in progress
+   * Github installation
 
 ## Release Date  
 
