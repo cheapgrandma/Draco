@@ -4,7 +4,7 @@
 
 ## Synopsis
 
-No more management on paper! Everything is now easy to manage since the arrival of Draco.
+No more management on paper! Everything is now easy to manage since the arrival of Draco. Readers, books, loans, delays, all is on Draco.
 
 ## Team members
 
