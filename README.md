@@ -1,10 +1,10 @@
 # Draco
 
-<img src="http://www.imaginestudio.ca/wp-content/uploads/2014/03/Entrepot.jpg" />
+<img src="https://www.aisquared.com/wp-content/uploads/2014/05/libraries.jpg" />
 
 ## Synopsis
 
-You have already run out of stock ? You do not want this to happen to you anymore ? So try Draco, the tool that will allow you to manage your products, your finances, you suppliers and your customers. Did I tell you that Draco also provides reports and invoices?
+No more management on paper! Everything is now easy to manage since the arrival of Draco.
 
 ## Team members
 
