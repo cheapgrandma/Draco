@@ -12,8 +12,12 @@ No more management on paper! Everything is now easy to manage since the arrival 
 
 ## Release History
 
+To see the work in progress, go see the Projects page. :)
+
+* 0.1.2
+   * Login / Password Reset (In Progress)
 * 0.1.1
-   * JS, CSS and Plugins files (In Progress)
+   * JS, CSS and Plugins files
 * 0.1.0
    * Laravel installation
 * 0.0.1
