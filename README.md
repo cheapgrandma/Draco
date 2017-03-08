@@ -14,7 +14,7 @@ No more management on paper! Everything is now easy to manage since the arrival 
 
 To see the work in progress, go see the Projects page. :)
 
-* 0.2
+* 0.2.0
    * Account settings (In progress)
 * 0.1.2
    * Login / Password Reset / Dashboard Layout
