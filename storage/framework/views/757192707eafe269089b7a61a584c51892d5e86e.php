@@ -1,9 +1,8 @@
-@extends('layouts.app')
-@section('title') Account @endsection
-@section('breadcrumb') <a href="/account">Account</a> @endsection
-@section('body-attr') data-spy="scroll" data-target="#nav-spy" data-offset="300" @endsection
+<?php $__env->startSection('title'); ?> Account <?php $__env->stopSection(); ?>
+<?php $__env->startSection('breadcrumb'); ?> <a href="/account">Account</a> <?php $__env->stopSection(); ?>
+<?php $__env->startSection('body-attr'); ?> data-spy="scroll" data-target="#nav-spy" data-offset="300" <?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <!-- Begin: Content -->
             <section id="content" class="table-layout">
 
@@ -32,7 +31,7 @@
                                                 <div class="section">
                                                 <label for="name" class="field-label">Full name</label>
                                                     <label class="field">
-                                                        <input type="text" name="name" id="name" class="gui-input" value="{{Auth::user()->name}}">
+                                                        <input type="text" name="name" id="name" class="gui-input" value="<?php echo e(Auth::user()->name); ?>">
                                                     </label>
                                                 </div>
                                             </div>
@@ -40,7 +39,7 @@
                                                 <div class="section">
                                                 <label for="email" class="field-label">Email</label>
                                                     <label class="field">
-                                                        <input type="email" name="email" id="email" class="gui-input" value="{{Auth::user()->email}}">
+                                                        <input type="email" name="email" id="email" class="gui-input" value="<?php echo e(Auth::user()->email); ?>">
                                                     </label>
                                                 </div>
                                             </div>
@@ -95,12 +94,14 @@
                         <ul class="fs14 list-unstyled list-spacing-10 mb10 pl5">
                             <li>
                                 <i class="fa fa-exclamation-circle text-warning fa-lg pr10"></i>
-                                <b> Created at:</b> {{Auth::user()->created_at }}
+                                <b> Created at:</b> <?php echo e(Auth::user()->created_at); ?>
+
 
                             </li>
                             <li>
                                 <i class="fa fa-exclamation-circle text-warning fa-lg pr10"></i>
-                                <b> Updated at:</b> {{Auth::user()->updated_at }}
+                                <b> Updated at:</b> <?php echo e(Auth::user()->updated_at); ?>
+
                             </li>
                         </ul>
                     </div>
@@ -127,9 +128,9 @@
 
 
             
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('scripts')
+<?php $__env->startSection('scripts'); ?>
 <script>
 
  // Init custom page animation
@@ -239,4 +240,5 @@
             }, 2200);
 
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
