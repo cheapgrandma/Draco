@@ -42,7 +42,7 @@
 
 </head>
 
-<body class="dashboard-page sb-l-o sb-r-c">
+<body class="dashboard-page sb-l-o sb-r-c" @yield('body-attr')>
     <!-- Start: Main -->
     <div id="main">
 
@@ -97,7 +97,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-persist pn w250 bg-white" role="menu">
                         <li class="br-t of-h">
-                            <a href="#" class="fw600 p12 animated animated-short fadeInDown">
+                            <a href="/account" class="fw600 p12 animated animated-short fadeInDown">
                                 <span class="fa fa-gear pr5"></span> Account Settings </a>
                         </li>
                         <li class="br-t of-h">
@@ -121,7 +121,7 @@
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-menu">
                     <li class="sidebar-label pt20">Menu</li>
-                    <li>
+                    <li id="menu-dashboard">
                         <a href="/home">
                             <span class="fa fa-home"></span>
                             <span class="sidebar-title">Dashboard</span>
@@ -143,7 +143,7 @@
                 <div class="topbar-left">
                     <ol class="breadcrumb">
                         <li class="crumb-active">
-                            <a href="/home">Dashboard</a>
+                            @yield('breadcrumb')
                         </li>
                         <li class="crumb-icon">
                             <a href="/home">
@@ -156,9 +156,7 @@
             <!-- End: Topbar -->
 
             <!-- Begin: Content -->
-            <section id="content">
-                @yield('content')
-            </section>
+            @yield('content')
             <!-- End: Content -->
         </section>
         <!-- End: Content-Wrapper -->
@@ -169,35 +167,35 @@
     <!-- BEGIN: PAGE SCRIPTS -->
 
     <!-- jQuery -->
-    <script type="text/javascript" src="vendor/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
     <!-- Bootstrap -->
-    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
 
     <!-- Sparklines CDN -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
     <!-- Chart Plugins -->
-    <script type="text/javascript" src="vendor/plugins/highcharts/highcharts.js"></script>
-    <script type="text/javascript" src="vendor/plugins/circles/circles.js"></script>
-    <script type="text/javascript" src="vendor/plugins/raphael/raphael.js"></script>
+    <script type="text/javascript" src="/vendor/plugins/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="/vendor/plugins/circles/circles.js"></script>
+    <script type="text/javascript" src="/vendor/plugins/raphael/raphael.js"></script>
 
     <!-- Holder js  -->
-    <script type="text/javascript" src="js/bootstrap/holder.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/holder.min.js"></script>
 
     <!-- Theme Javascript -->
-    <script type="text/javascript" src="js/utility/utility.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="/js/utility/utility.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/demo.js"></script>
 
     <!-- Admin Panels  -->
-    <script type="text/javascript" src="admin-tools/admin-plugins/admin-panels/json2.js"></script>
-    <script type="text/javascript" src="admin-tools/admin-plugins/admin-panels/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="admin-tools/admin-plugins/admin-panels/adminpanels.js"></script>
+    <script type="text/javascript" src="/admin-tools/admin-plugins/admin-panels/json2.js"></script>
+    <script type="text/javascript" src="/admin-tools/admin-plugins/admin-panels/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="/admin-tools/admin-plugins/admin-panels/adminpanels.js"></script>
 
     <!-- Page Javascript -->
-    <script type="text/javascript" src="js/pages/widgets.js"></script>
+    <script type="text/javascript" src="/js/pages/widgets.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
 
@@ -232,6 +230,8 @@
     </script>
 
     <!-- END: PAGE SCRIPTS -->
+
+    @yield('scripts')
 
 </body>
 
